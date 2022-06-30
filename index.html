@@ -1,14 +1,308 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Darslar</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
+/* Header begin */
+.header_item{
+    display: flex;
+    
+}
+:root{
+    --h2-color: #d0e3ff;
+    --span-color: #d7ebff;
+    --c-blue: #002d70;
+    --c-green: green;
+    --c-white: #fff;
+    --c-black: #000;
+    --c-grey: #dcdfe4;
+    --c-lighblue: #0047b3;
+    --c-lightgrey: rgba(220, 223, 228, 0.44);
+    --c-dark-gray: #353b41;
+    --filter-rec: invert(100%) sepia(11%) saturate(407%) hue-rotate(191deg)
+      brightness(110%) contrast(81%);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.container_one{
+    position: fixed;
+    z-index: 2;
+    height: 80px;
+    width: 100%;
+    background-image: linear-gradient(#002d70, #2d5591, #002d70);
+    display: flex;
 
-	<a href="1dars.html"><button>1-dars</button></a><br><br><br><br><hr>
-	<p>Yaratuvchi: <a href="https://t.me/behruzabdurahimovofficial"><u>Behruz Abdurahimov</u></a></p>
-</body>
-</html>
+    justify-content: space-between;
+}
+.menu select{
+    background-color: #c7eafa;
+    display: flex;
+    margin: 7px;
+    float: right;
+    font-size: 20px;
+    margin-top: 18px;
+    margin-left: -15px;
+}
+.menu{
+    display: flex;
+    margin-right: -30px;
+}
+
+.logo{
+    padding-left: 10px;
+}
+.logo sub{
+    margin-top: 24px;
+    font-size: 20px;
+    color: var(--c-white);
+    position: absolute;
+}
+.logo img{
+    margin: 10px;
+    margin-left: -5px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.navbar ul{
+    padding-right: 10px;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+
+}
+
+
+/* Header end */
+
+
+/*Sinflar begin */
+
+header{
+	width: 100%;
+}
+
+p{
+	font-size: 10;
+	color: red;
+}
+.bowyuq{
+	text-align: center;
+    font-size: 30px;
+    margin: 10px 10px 10px 10px;
+    color: rgb(134, 226, 134);
+}
+.q1{
+    display: inline-block;
+    text-decoration: none;
+}
+
+
+div{
+	text-align: center;
+	color: #0481FF;
+}
+div h1{
+	font-size: 50px;
+	margin-bottom: 10px;
+	color: var(--c-white);
+}
+
+
+div button{
+    color: var(--c-blue);
+    background-color: var(--c-white);
+    padding: 10px 40px;
+    font-size: 30px;
+    font-weight: 400;
+    border-radius: 5px;
+    margin: 30px auto;
+    margin-right: 10px;
+    transition: all 0.4s;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    
+
+}
+div button:hover{
+    transform: scale(1.1);
+
+}
+h3{
+	background-color: #B7E8FF;
+	font-family: Colibri;
+}
+/* Sinflar end */
+
+
+
+
+
+/* Telegram knopka begin */
+.tgbtn{
+    position: fixed;
+    right: 63px;
+    bottom: 90xpx;
+}
+.tgbtn a{
+    text-align: right;
+    background-color: white;
+    color: #0088CC;
+    font-size: 35px;
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    font-size: 30px;
+    padding-top: 5px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 40%;
+    transition: all 0.4s ease;
+}
+.tgbtn a:hover{
+
+    transform: scale(1.13);
+}
+/* Telegram knopka end */
+
+/* Footer begin */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body{
+    line-height: 1.8;
+    font-family: 'Poppins', sans-serif;
+    background-color: #011431;
+    background-repeat: repeat-y;
+	background-size: contain;
+    
+}
+
+.footer{
+    background-color: #24262B;
+    padding: 20px 0;
+    padding-bottom: 100px;
+}
+
+.img img{
+    height: 230px;
+    width: 280px;
+    margin-top: -50px;
+    margin-bottom: -40px;
+}
+
+.container{
+    max-width: 1170px;
+    margin: auto;
+}
+ul{
+    list-style: none;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.footer-col{
+    width: 33%;
+    padding: 0 15px;
+    
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-col h4{
+    font-size: 21px;
+    color: #ffffff;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 132px;
+    right: 132px;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 90px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+    font-size: 20px;
+    text-transform: capitalize;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    transform: scale(1.13);
+}
+.footer-col .social-links a{
+    display: inline-block;
+    height: 50px;
+    font-size: 25px;
+    width: 50px;
+    background-color: #ffffff;
+    margin: 10px, 10px, 0;
+    margin-bottom: 8px;
+    margin-right: 2px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+.footer-col .social-links a .fa-telegram{
+    color: #0088CC;
+}
+.footer-col .social-links a .fa-instagram{
+    color: transparent;
+    background: -webkit-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -o-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.footer-col .social-links a .fa-facebook-f{
+    color: #3b5998;
+}
+.footer-col .social-links a .fa-tiktok{
+    color: #010101;
+}
+.footer-col .social-links a .fa-github{
+    color: #010101;
+}
+.footer-col .social-links a .fa-twitter{
+    color: #1D9BF0;
+}
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+    transform: scale(1.13);
+}
+@media(max-width: 767px){
+    .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+
+}}
+@media(max-width: 574px){
+    .footer-col{
+    width: 100%;
+    }
+
+}
+    /* Footer end */
